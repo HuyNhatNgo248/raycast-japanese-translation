@@ -38,17 +38,6 @@ Only one command: **Translate Japanese Text**.
 | Copy Original | `⌘⇧C` | Copy original Japanese text |
 | Copy Both | `⌘⌥C` | Copy original and translation together |
 
-## Project Structure
-
-```text
-src/
-  translate.tsx           # Main command — form, result, history list
-  lib/
-    translate.ts          # DeepL + MyMemory API with fallback logic
-    history.ts            # LocalStorage persistence (50 entries max)
-    reading.ts            # Kanji reading annotation via Jisho API
-```
-
 ## APIs Used
 
 | API | Auth | Usage |
