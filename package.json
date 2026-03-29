@@ -1,0 +1,62 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "ja-en-translate",
+  "title": "Japanese → English Translator",
+  "description": "Translate Japanese text to English",
+  "icon": "extension-icon.png",
+  "author": "Huy",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "translate",
+      "title": "Translate Japanese Text",
+      "subtitle": "Japanese → English",
+      "description": "Paste Japanese text and translate it to English",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "apiProvider",
+      "title": "Translation Provider",
+      "type": "dropdown",
+      "required": false,
+      "default": "mymemory",
+      "description": "Which API to use",
+      "data": [
+        {
+          "title": "MyMemory (Free, no key needed)",
+          "value": "mymemory"
+        },
+        {
+          "title": "DeepL (Better quality)",
+          "value": "deepl"
+        }
+      ]
+    },
+    {
+      "name": "deeplApiKey",
+      "title": "DeepL API Key",
+      "description": "Required only if using DeepL",
+      "type": "password",
+      "required": false,
+      "default": ""
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.70.0",
+    "kuromoji": "^0.1.2",
+    "timeago.js": "^4.0.2",
+    "ts-markdown-builder": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/kuromoji": "^0.1.3",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.27",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop"
+  }
+}
