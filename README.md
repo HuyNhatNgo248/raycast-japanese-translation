@@ -10,6 +10,8 @@ A Raycast extension for translating Japanese text to English, with kanji reading
 - Translation history with search, copy, and delete
 - Copy without closing the Raycast window
 
+[Watch the video](https://youtu.be/GGVSBe4xzRc)
+
 ## Setup
 
 ```bash
